@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ionic applicaion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+ <ion-grid class="ion-padding ion-text-center">
+  <ion-row>
+    <ion-col align-self-center>
+    <div class="title">
+      <h2>bienvenu</h2>
+      <p>class MPILC2</p>
+    </div>
+  
+    <ion-button [routerLink]="['/login']" expand="block">
+      <ion-label>connexion</ion-label>
+    </ion-button>
+    <span class="divider line or one-line"> or</span>
+    <ion-button [routerLink]="['/registre']" fill="clear"><ion-label>inscription</ion-label></ion-button>
+  </ion-col>
+  </ion-row>
+ </ion-grid>
+</ion-content>

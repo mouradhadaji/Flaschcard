@@ -1,0 +1,46 @@
+ion-content {
+  --background: linear-gradient(135deg, #06b6d4 0%, #4f46e5 100%);
+}
+
+.form {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+  color: #06b6d4;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+ion-item {
+  margin-bottom: 14px;
+  --background: #f9fafb;
+  border-radius: 12px;
+}
+
+ion-icon {
+  color: #06b6d4;
+}
+
+ion-button {
+  --border-radius: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.links a {
+  color: #06b6d4;
+  text-decoration: none;
+}

@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Inscription</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center ion-padding">
+      <ion-col size-md="6" size-lg="4" size-xs="12" align-self-center>
+
+        <div class="form ion-padding">
+          <div class="ion-text-center">
+            <h2>Créer un compte</h2>
+            <p>Rejoignez notre communauté</p>
+          </div>
+
+          <ion-item>
+            <ion-icon name="person-outline" slot="start"></ion-icon>
+            <ion-input placeholder="Nom complet" type="text"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="mail-outline" slot="start"></ion-icon>
+            <ion-input placeholder="Email" type="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+            <ion-input placeholder="Mot de passe" type="password"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input placeholder="Date de naissance" type="date"></ion-input>
+          </ion-item>
+
+          <ion-radio-group value="homme">
+            <ion-item lines="none">
+              <ion-label>Homme</ion-label>
+              <ion-radio slot="start" value="homme"></ion-radio>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-label>Femme</ion-label>
+              <ion-radio slot="start" value="femme"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+
+          <ion-button expand="block" color="primary">S'inscrire</ion-button>
+
+          <div class="links">
+            <a routerLink="/login">Déjà un compte ? Se connecter</a>
+          </div>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

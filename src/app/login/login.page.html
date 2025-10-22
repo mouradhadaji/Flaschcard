@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center ion-padding">
+      <ion-col size-md="6" size-lg="5" size-xs="12" align-self-center>
+
+        <div class="ion-text-center ion-margin-top">
+          <h4>Welcome Back</h4>
+          <p>Please log in to continue</p>
+        </div>
+
+        <div class="form ion-padding">
+          <!-- Email -->
+          <ion-item>
+            <ion-icon name="mail-outline" slot="start"></ion-icon>
+            <ion-input
+              placeholder="Enter email"
+              type="email"
+              required
+            ></ion-input>
+          </ion-item>
+
+          <!-- Password -->
+          <ion-item>
+            <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+            <ion-input
+              placeholder="Enter password"
+              type="password"
+              required
+            ></ion-input>
+          </ion-item>
+
+          <!-- Forgot Password -->
+          <div class="ion-text-right ion-margin-top">
+            <ion-text color="medium">
+              <a routerLink="/forgotpasword">Forgot Password?</a>
+            </ion-text>
+          </div>
+
+          <!-- Login Button -->
+          <div class="ion-padding-top">
+            <ion-button expand="block" size="large" color="primary">
+              Login
+            </ion-button>
+          </div>
+
+          <!-- Register Redirect -->
+          <div class="ion-text-center ion-margin-top">
+            <ion-text color="medium">
+              Don’t have an account?
+              <a routerLink="/registre">Create one</a>
+            </ion-text>
+          </div>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
